@@ -1,0 +1,129 @@
+{
+  "horizonteExcelencia": {
+    "establecimiento": {
+      "nombre": "LICEO DE CERVANTES",
+      "dane": "308001000521"
+    },
+    "fuente": "Resultados Pruebas Saber 11 - ICFES",
+    "data": {
+      "2024": {
+        "puntajeGlobal": {
+          "promedio": 345,
+          "desviacion": 43
+        },
+        "areas": {
+          "lecturaCritica": {
+            "promedio": 68,
+            "desviacion": 9,
+            "distribucionNiveles": {
+              "nivel1": 0,
+              "nivel2": 2,
+              "nivel3": 37,
+              "nivel4": 61
+            }
+          },
+          "matematicas": {
+            "promedio": 71,
+            "desviacion": 10,
+            "distribucionNiveles": {
+              "nivel1": 0,
+              "nivel2": 0,
+              "nivel3": 52,
+              "nivel4": 48
+            }
+          },
+          "socialesCiudadanas": {
+            "promedio": 66,
+            "desviacion": 11,
+            "distribucionNiveles": {
+              "nivel1": 2,
+              "nivel2": 17,
+              "nivel3": 48,
+              "nivel4": 33
+            }
+          },
+          "cienciasNaturales": {
+            "promedio": 67,
+            "desviacion": 10,
+            "distribucionNiveles": {
+              "nivel1": 0,
+              "nivel2": 13,
+              "nivel3": 50,
+              "nivel4": 37
+            }
+          },
+          "ingles": {
+            "promedio": 80,
+            "desviacion": 7,
+            "distribucionNiveles": {
+              "A_menos": 0,
+              "A1": 0,
+              "A2": 0,
+              "B1": 41,
+              "B_mas": 59
+            }
+          }
+        }
+      },
+      "2023": {
+        "puntajeGlobal": {
+          "promedio": 347,
+          "desviacion": 32
+        },
+        "areas": {
+          "lecturaCritica": {
+            "promedio": 70,
+            "desviacion": 7,
+            "distribucionNiveles": {
+              "nivel1": 0,
+              "nivel2": 2,
+              "nivel3": 23,
+              "nivel4": 75
+            }
+          },
+          "matematicas": {
+            "promedio": 70,
+            "desviacion": 10,
+            "distribucionNiveles": {
+              "nivel1": 0,
+              "nivel2": 0,
+              "nivel3": 58,
+              "nivel4": 42
+            }
+          },
+          "socialesCiudadanas": {
+            "promedio": 67,
+            "desviacion": 9,
+            "distribucionNiveles": {
+              "nivel1": 0,
+              "nivel2": 9,
+              "nivel3": 53,
+              "nivel4": 38
+            }
+          },
+          "cienciasNaturales": {
+            "promedio": 66,
+            "desviacion": 7,
+            "distribucionNiveles": {
+              "nivel1": 0,
+              "nivel2": 9,
+              "nivel3": 64,
+              "nivel4": 26
+            }
+          },
+          "ingles": {
+            "promedio": 83,
+            "desviacion": 8,
+            "distribucionNiveles": {
+              "A_menos": 0,
+              "A1": 0,
+              "A2": 0,
+              "B1": 26,
+              "B_mas": 74
+            }
+          }
+        }
+      }
+    }
+  }
+}
