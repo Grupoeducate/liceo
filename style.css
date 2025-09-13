@@ -1,0 +1,166 @@
+/* ... (Estilos anteriores) ... */
+
+/* --- Estilos Página Análisis por Áreas --- */
+.tab-container {
+    margin-top: 2rem;
+}
+
+.tab-links {
+    display: flex;
+    border-bottom: 2px solid var(--color-gris-claro);
+    margin-bottom: 1.5rem;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: var(--fuente-principal);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-texto-principal);
+    border-bottom: 4px solid transparent;
+    margin-bottom: -2px; /* Alinea con el borde inferior del contenedor */
+}
+
+.tab-link.active {
+    color: var(--color-primario);
+    border-bottom-color: var(--color-primario);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.analysis-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.chart-container.half-width {
+    width: 100%;
+}
+
+.component-explanation.full-width {
+    grid-column: 1 / -1; /* Ocupa todo el ancho */
+    background-color: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-acento-amarillo);
+}
+/* --- Estilos Página Estudiantes Destacados --- */
+.destacados-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.ranking-card {
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-top: 5px solid var(--color-primario);
+}
+
+.ranking-card h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--color-gris-claro);
+    padding-bottom: 0.5rem;
+}
+
+.ranking-card ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+.ranking-card li {
+    font-size: 1.2rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--color-gris-claro);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ranking-card li:last-child {
+    border-bottom: none;
+}
+
+.ranking-card li span {
+    font-weight: 700;
+    color: var(--color-blanco);
+    background-color: var(--color-acento-verde);
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.ranking-card li:first-child span {
+    background-color: var(--color-acento-amarillo); /* Destacar al #1 */
+}
+/* --- Estilos Página Siguientes Pasos --- */
+.final-step-layout {
+    display: grid;
+    gap: 2rem;
+}
+
+.summary-card, .plan-card {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.summary-card {
+    border-left: 5px solid var(--color-acento-verde);
+}
+
+.plan-card {
+    border-left: 5px solid var(--color-acento-naranja);
+}
+
+.plan-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.plan-card li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.plan-card li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.cta-card {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cta-card h2 {
+    color: var(--color-blanco);
+}
+
+.cta-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
