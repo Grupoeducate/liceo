@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes Destacados - Ruta de Progreso 9°</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="img/logogec.png" alt="Logo Grupo Edúcate Colombia"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="panorama_general.html">Panorama General</a>
+            <a href="analisis_areas.html">Análisis por Áreas</a>
+            <a href="destacados.html" class="active">Estudiantes Destacados</a>
+            <a href="#">Siguientes Pasos</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Reconocimiento al Esfuerzo y la Excelencia</h1>
+        <section class="welcome-section">
+            <p>El éxito es un camino que se construye con dedicación, perseverancia y talento. Queremos felicitar de manera especial a los siguientes estudiantes por su excepcional desempeño en nuestra prueba final, la Misión Gamma.</p>
+            <p>Sus logros son un motivo de orgullo para toda la comunidad educativa y un claro reflejo del alto potencial que caracteriza a toda la generación de noveno grado del Liceo de Cervantes. ¡Extendemos nuestro reconocimiento al esfuerzo de cada uno de los estudiantes!</p>
+        </section>
+
+        <div class="destacados-grid">
+            <div class="ranking-card">
+                <h2>🏆 Top 5 - Promedio General</h2>
+                <ol id="top-general-list"></ol>
+            </div>
+            <div class="ranking-card">
+                <h2>📖 Top 3 - Lectura Crítica</h2>
+                <ol id="top-lecturaCritica-list"></ol>
+            </div>
+            <div class="ranking-card">
+                <h2>🧮 Top 3 - Matemáticas</h2>
+                <ol id="top-matematicas-list"></ol>
+            </div>
+            <div class="ranking-card">
+                <h2>🌍 Top 3 - Sociales y Ciudadanas</h2>
+                <ol id="top-socialesCiudadanas-list"></ol>
+            </div>
+            <div class="ranking-card">
+                <h2>🔬 Top 3 - Ciencias Naturales</h2>
+                <ol id="top-cienciasNaturales-list"></ol>
+            </div>
+            <div class="ranking-card">
+                <h2>🇬🇧 Top 3 - Inglés</h2>
+                <ol id="top-ingles-list"></ol>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>

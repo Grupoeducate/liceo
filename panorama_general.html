@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama General - Ruta de Progreso 9°</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="img/logogec.png" alt="Logo Grupo Edúcate Colombia"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="panorama_general.html" class="active">Panorama General</a>
+            <a href="#">Análisis por Áreas</a>
+            <a href="#">Estudiantes Destacados</a>
+            <a href="#">Siguientes Pasos</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Panorama General: Nuestro Avance como Grado</h1>
+        <p>Esta sección presenta la "gran foto" del desempeño consolidado de todo el grado noveno. Aquí podemos visualizar la trayectoria de crecimiento a lo largo del año y cómo nos posicionamos frente al objetivo institucional.</p>
+
+        <section class="chart-container">
+            <h2>Evolución del Promedio Global (Escala 0-500)</h2>
+            <p>Este gráfico muestra el avance del puntaje promedio de todo el grado en cada una de nuestras tres misiones. La trayectoria ascendente es un claro testimonio del esfuerzo colectivo y la efectividad de nuestro plan de acompañamiento.</p>
+            <canvas id="promedioGlobalChart"></canvas>
+        </section>
+
+        <section class="chart-container">
+            <h2>Comparativa con Nuestro Horizonte de Excelencia</h2>
+            <p>Aquí comparamos nuestro progreso con los resultados históricos del colegio en las Pruebas Saber 11. Como podemos observar, el camino que estamos construyendo nos acerca progresivamente a este alto estándar, sentando las bases para el éxito futuro.</p>
+            <canvas id="comparativaHorizonteChart"></canvas>
+        </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>

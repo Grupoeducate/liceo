@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análisis por Áreas - Ruta de Progreso 9°</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="logo"><img src="img/logogec.png" alt="Logo Grupo Edúcate Colombia"></a>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="panorama_general.html">Panorama General</a>
+            <a href="analisis_areas.html" class="active">Análisis por Áreas</a>
+            <a href="#">Estudiantes Destacados</a>
+            <a href="#">Siguientes Pasos</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1>Análisis Detallado por Áreas</h1>
+        <p>Seleccione un área para explorar en detalle el progreso del grado. Cada sección muestra la evolución del promedio frente al "Horizonte de Excelencia" del colegio y un desglose de las habilidades específicas (componentes) que hemos fortalecido.</p>
+
+        <!-- Navegación por Pestañas -->
+        <div class="tab-container">
+            <div class="tab-links">
+                <button class="tab-link active" data-target="lecturaCritica">Lectura Crítica</button>
+                <button class="tab-link" data-target="matematicas">Matemáticas</button>
+                <button class="tab-link" data-target="socialesCiudadanas">Sociales y Ciudadanas</button>
+                <button class="tab-link" data-target="cienciasNaturales">Ciencias Naturales</button>
+                <button class="tab-link" data-target="ingles">Inglés</button>
+            </div>
+
+            <!-- Contenido de las Pestañas -->
+            <div id="lecturaCritica" class="tab-content active">
+                <h2>Lectura Crítica</h2>
+                <div class="analysis-grid">
+                    <div class="chart-container half-width">
+                        <h3>Evolución del Promedio (0-100)</h3>
+                        <canvas id="lecturaCriticaPromedioChart"></canvas>
+                    </div>
+                    <div class="chart-container half-width">
+                        <h3>Evolución por Componentes</h3>
+                        <canvas id="lecturaCriticaComponentesChart"></canvas>
+                    </div>
+                    <div class="component-explanation full-width">
+                        <h3>¿Qué Significa "Leer Críticamente"?</h3>
+                        <p><strong>Sintáctico:</strong> Es entender cómo se organizan las frases y párrafos para darle sentido a un texto.</p>
+                        <p><strong>Pragmático:</strong> Es comprender la intención del autor y el contexto en que se escribió el texto.</p>
+                        <p><strong>Semántico:</strong> Es captar el significado global de las ideas, tanto las explícitas como las que se leen "entre líneas".</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="matematicas" class="tab-content">
+                <h2>Matemáticas</h2>
+                <div class="analysis-grid">
+                    <div class="chart-container half-width">
+                        <h3>Evolución del Promedio (0-100)</h3>
+                        <canvas id="matematicasPromedioChart"></canvas>
+                    </div>
+                    <div class="chart-container half-width">
+                        <h3>Evolución por Componentes</h3>
+                        <canvas id="matematicasComponentesChart"></canvas>
+                    </div>
+                    <div class="component-explanation full-width">
+                        <h3>¿Qué Evaluamos en Matemáticas?</h3>
+                        <p><strong>Numérico-Variacional:</strong> Es la habilidad para comprender los números, el álgebra y cómo las cantidades cambian y se relacionan. Es el motor del cálculo.</p>
+                        <p><strong>Geométrico-Métrico:</strong> Es la capacidad de entender las formas, el espacio, las medidas y sus propiedades. Es la matemática del mundo que nos rodea.</p>
+                        <p><strong>Aleatorio:</strong> Corresponde a la estadística y la probabilidad. Es la herramienta para analizar datos y tomar decisiones informadas.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Repetir la estructura para Sociales, Naturales e Inglés con sus IDs correspondientes -->
+            <div id="socialesCiudadanas" class="tab-content">
+                 <h2>Sociales y Ciudadanas</h2>
+                 <div class="analysis-grid">
+                    <div class="chart-container half-width"><h3>Evolución del Promedio (0-100)</h3><canvas id="socialesCiudadanasPromedioChart"></canvas></div>
+                    <div class="chart-container half-width"><h3>Evolución por Componentes</h3><canvas id="socialesCiudadanasComponentesChart"></canvas></div>
+                    <div class="component-explanation full-width">
+                        <h3>¿Qué Evaluamos en Sociales y Ciudadanas?</h3>
+                        <p><strong>Espacio y Ambiente:</strong> Mide la habilidad para analizar la relación entre la sociedad, su territorio y los desafíos ambientales.</p>
+                        <p><strong>Historia y Cultura:</strong> Es la capacidad de comprender cómo los eventos del pasado moldean nuestro presente e identidad.</p>
+                        <p><strong>Ético/Político:</strong> Evalúa la comprensión de la Constitución, los derechos y deberes que forman nuestra democracia.</p>
+                    </div>
+                 </div>
+            </div>
+
+            <div id="cienciasNaturales" class="tab-content">
+                <h2>Ciencias Naturales</h2>
+                <div class="analysis-grid">
+                   <div class="chart-container half-width"><h3>Evolución del Promedio (0-100)</h3><canvas id="cienciasNaturalesPromedioChart"></canvas></div>
+                   <div class="chart-container half-width"><h3>Evolución por Componentes</h3><canvas id="cienciasNaturalesComponentesChart"></canvas></div>
+                   <div class="component-explanation full-width">
+                       <h3>¿Qué Habilidades Científicas Medimos?</h3>
+                       <p><strong>Entorno Biológico:</strong> Comprensión de los seres vivos, los ecosistemas y los procesos de la vida.</p>
+                       <p><strong>Entorno Físico:</strong> Conocimiento de los principios de la física, como el movimiento, la energía y las ondas.</p>
+                       <p><strong>Ciencia, Tecnología y Sociedad:</strong> Análisis del impacto de la ciencia en nuestra vida diaria.</p>
+                   </div>
+                </div>
+            </div>
+
+            <div id="ingles" class="tab-content">
+                <h2>Inglés</h2>
+                <div class="analysis-grid">
+                   <div class="chart-container half-width"><h3>Evolución del Promedio (0-100)</h3><canvas id="inglesPromedioChart"></canvas></div>
+                   <div class="chart-container half-width"><h3>Evolución por Componentes</h3><canvas id="inglesComponentesChart"></canvas></div>
+                   <div class="component-explanation full-width">
+                       <h3>¿Qué Evaluamos en Inglés?</h3>
+                       <p><strong>Lectura:</strong> Capacidad de comprender textos escritos en inglés.</p>
+                       <p><strong>Lexical:</strong> Mide la amplitud y precisión del vocabulario que posee el estudiante.</p>
+                       <p><strong>Gramatical:</strong> Evalúa el uso correcto de las estructuras y tiempos verbales.</p>
+                   </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/charts.js"></script>
+</body>
+</html>
