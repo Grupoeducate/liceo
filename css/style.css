@@ -1,6 +1,123 @@
-/* ... (Estilos anteriores) ... */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
 
-/* --- Estilos Página Análisis por Áreas --- */
+:root {
+    --color-primario: #17334B;
+    --color-texto-principal: #333333;
+    --color-acento-verde: #54BBAB;
+    --color-acento-naranja: #D94D15;
+    --color-acento-amarillo: #F39325;
+    --color-fondo: #F8F9FA;
+    --color-blanco: #FFFFFF;
+    --color-gris-claro: #E9ECEF;
+    --fuente-principal: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    font-family: var(--fuente-principal);
+    color: var(--color-texto-principal);
+    background-color: var(--color-fondo);
+    margin: 0;
+    padding-top: 70px;
+}
+
+h1, h2, h3 {
+    font-family: var(--fuente-principal);
+    color: var(--color-primario);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-blanco);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: 70px;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.navbar .logo img {
+    height: 45px;
+}
+
+.nav-links a {
+    color: var(--color-primario);
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding-bottom: 5px;
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    border-bottom-color: var(--color-acento-naranja);
+}
+
+.welcome-section {
+    background-color: var(--color-blanco);
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.how-to-read {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.info-card {
+    background-color: var(--color-blanco);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-acento-verde);
+}
+
+.info-card h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--color-acento-naranja);
+    color: var(--color-blanco);
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    background-color: #c0392b;
+}
+
+.chart-container {
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 2.5rem;
+}
+
 .tab-container {
     margin-top: 2rem;
 }
@@ -9,6 +126,7 @@
     display: flex;
     border-bottom: 2px solid var(--color-gris-claro);
     margin-bottom: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .tab-link {
@@ -21,7 +139,7 @@
     font-weight: 700;
     color: var(--color-texto-principal);
     border-bottom: 4px solid transparent;
-    margin-bottom: -2px; /* Alinea con el borde inferior del contenedor */
+    margin-bottom: -2px;
 }
 
 .tab-link.active {
@@ -48,13 +166,13 @@
 }
 
 .component-explanation.full-width {
-    grid-column: 1 / -1; /* Ocupa todo el ancho */
+    grid-column: 1 / -1;
     background-color: var(--color-blanco);
     padding: 1.5rem;
     border-radius: 8px;
     border-left: 5px solid var(--color-acento-amarillo);
 }
-/* --- Estilos Página Estudiantes Destacados --- */
+
 .destacados-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -105,9 +223,9 @@
 }
 
 .ranking-card li:first-child span {
-    background-color: var(--color-acento-amarillo); /* Destacar al #1 */
+    background-color: var(--color-acento-amarillo);
 }
-/* --- Estilos Página Siguientes Pasos --- */
+
 .final-step-layout {
     display: grid;
     gap: 2rem;
